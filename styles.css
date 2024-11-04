@@ -1,0 +1,36 @@
+body {
+    background-color:#838b83;
+    font-family: Arial, sans-serif;
+  }
+  
+  h1 {
+    color: rgb(11, 11, 11);
+    text-align: center;
+  }
+  
+  .footer {
+    font-size: 14px;
+    text-align: center;
+    margin-top: 230px;
+  }
+  input[type="text"], textarea {
+    width: 100%; /* Занимает всю доступную ширину */
+    max-width: 400px; /* Максимальная ширина поля */
+    padding: 10px; /* Отступы внутри поля */
+    margin-bottom: 15px; /* Отступ между полями */
+    border: 1px solid #ccc; /* Граница поля */
+    border-radius: 4px; /* Скругление углов */
+}
+
+button {
+    padding: 10px 15px; /* Отступы внутри кнопки */
+    background-color: #4CAF50; /* Цвет фона кнопки */
+    color: white; /* Цвет текста */
+    border: none; /* Без рамки */
+    border-radius: 4px; /* Скругление углов */
+    cursor: pointer; /* Изменение курсора при наведении */
+}
+
+button:hover {
+    background-color: #45a049; /* Цвет фона при наведении */
+}
