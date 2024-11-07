@@ -1,26 +1,101 @@
-body {
-    background-color:#838b83;
-    font-family: Arial, sans-serif;
+
+html {
+  font-size: 16px; /* корневой размер шрифта */
+}
+  body {
+    background-color:#838b83;/* цвет-фон страницы*/
+    font-family: Arial, sans-serif;/*шрифт и резервный шрифт*/
   }
-  
+
   h1 {
-    color: rgb(11, 11, 11);
-    text-align: center;
+    color: darkblue;
+    text-align: center;   /* текст по центру*/
+    font-size: 2em;   /* размер шрифта */
+  }
+  p {
+    line-height: 1.5; /* межстрочный интервал*/
+  }
+
+  ul {
+  line-height: 1.5;   /* межстрочный интервал*/
+  }
+
+  nav ul {
+    list-style-type: none;  /* убирает нумерацию списка */
+    display:flex;        /* список становится горизонтольным */
+    justify-content: space-between; /* добавляет оступы между списками*/
+  }
+  nav ul li a:hover { /*подсветка ссылки в списке навигации*/
+  
+  background-color: lightgray;/
+  }
+
+    .highlight {
+      background-color: #e6e6fa;
+      font-weight: 600;
+    }
+    
+    .centered {
+      text-align: center;
+    }
+  
+  #about {
+    padding: 40px; /* Внутренние отступы */
+    margin:     20px 0; /* Внешние отступы сверху и снизу */
+    border: 10px double lightblue;
+  }
+  #sights {
+    padding: 40px; /* Внутренние отступы */
+    margin:     20px 0; /* Внешние отступы сверху и снизу */
+    border: 10px double lightblue;
+  }
+  #contacts {
+    padding: 40px; /* Внутренние отступы */
+    margin:     20px 0; /* Внешние отступы сверху и снизу */
+    border: 10px double lightblue;
+  }
+  table{ 
+  color: rgb(145, 67, 67);            /* цвет текста */
+  text-align: center;        /* Выравнивание текста по  центру*/
+  width: 100%               /* ширина таблицы*/
+  }
+ th{
+  font-weight: bold;
+  background-color: lightgray;
+ }
+ tr:nth-child(even) {
+  background-color: #060101;       /* светлый фон для четных строк */
+}
+
+tr:nth-child(odd) {
+  background-color: #471387;       /* белый фон для нечетных строк */
+}
+
+  
+  #contacts form{
+    width: 100%;              /* Ширина формы */
+    max-width: 423px;         /* Максимальная ширина формы */
+    margin: 0 auto;           /* Центрирование формы */
+    padding: 10px;            /* Отступы внутри формы */
+    border: 1px solid #ccc;  /* Граница формы */
+    border-radius: 20px;      /* Скругленные углы */
+    background-color: green; /* Цвет фона формы */
+  }
+  input[type="text"], textarea { /* Стили будут применяться как к текстовому полю ввода, так и к текстовой области (textarea*/
+    width: 100%; /* Занимает всю доступную ширину */
+      max-width: 400px; /* Максимальная ширина поля */
+      padding: 10px; /* Отступы внутри поля */
+      margin-bottom: 15px; /* Отступ между полями */
+      border: 1px solid #ccc; /* Граница поля */
+      border-radius: 4px; /* Скругление углов */
   }
   
   .footer {
     font-size: 14px;
     text-align: center;
-    margin-top: 230px;
+    margin-top: 50px; /* Устанавливает верхний отступ футера*/
   }
-  input[type="text"], textarea {
-    width: 100%; /* Занимает всю доступную ширину */
-    max-width: 400px; /* Максимальная ширина поля */
-    padding: 10px; /* Отступы внутри поля */
-    margin-bottom: 15px; /* Отступ между полями */
-    border: 1px solid #ccc; /* Граница поля */
-    border-radius: 4px; /* Скругление углов */
-}
+ 
 
 button {
     padding: 10px 15px; /* Отступы внутри кнопки */
@@ -34,3 +109,11 @@ button {
 button:hover {
     background-color: #45a049; /* Цвет фона при наведении */
 }
+@media (max-width: 768px) {
+  th {
+    font-size: 1.5em;     /* Заголовки таблицы уменьшены */
+  }
+  nav ul {
+    flex-direction: column;  /*  список вертикальный */
+  }
+} 
