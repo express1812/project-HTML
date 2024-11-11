@@ -54,10 +54,12 @@ html {
     margin:     20px 0; /* Внешние отступы сверху и снизу */
     border: 10px double lightblue;
   }
-  table{ 
+  table { 
+    border: 3px solid black;
   color: rgb(145, 67, 67);            /* цвет текста */
   text-align: center;        /* Выравнивание текста по  центру*/
   width: 100%               /* ширина таблицы*/
+  
   }
  th{
   font-weight: bold;
@@ -79,9 +81,9 @@ tr:nth-child(odd) {
     padding: 10px;            /* Отступы внутри формы */
     border: 1px solid #ccc;  /* Граница формы */
     border-radius: 20px;      /* Скругленные углы */
-    background-color: green; /* Цвет фона формы */
+    background-color: green ; /* Цвет фона формы */
   }
-  input[type="text"], textarea { /* Стили будут применяться как к текстовому полю ввода, так и к текстовой области (textarea*/
+  input[type="text"], [type="email"], textarea { /* Стили будут применяться как к текстовому полю ввода, так и к текстовой области (textarea*/
     width: 100%; /* Занимает всю доступную ширину */
       max-width: 400px; /* Максимальная ширина поля */
       padding: 10px; /* Отступы внутри поля */
@@ -109,7 +111,7 @@ button {
 button:hover {
     background-color: #45a049; /* Цвет фона при наведении */
 }
-@media (max-width: 768px) {
+@media (max-width: 768px) { /*медиа запрос*/
   th {
     font-size: 1.5em;     /* Заголовки таблицы уменьшены */
   }
